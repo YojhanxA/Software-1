@@ -1,8 +1,10 @@
 import React from "react";
 import miLogo from "../Logo/x.png";
 import "../styles/home.css";
+import { Link, NavLink } from "react-router-dom";
 
 export const HomePage = () => {
+  const onCreateAccount = () => {};
   return (
     <>
       <div style={{ backgroundColor: "black" }}>
@@ -44,7 +46,14 @@ export const HomePage = () => {
               </button>
               <div style={{ textAlign: "center" }}>
                 <p style={{ marginTop: "-15px" }}>o</p>
-                <button className="btn2">Crear Cuenta</button>
+                <button className="btn2">
+                  <Link
+                    to="create-account"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Crear Cuenta
+                  </Link>
+                </button>
               </div>
             </div>
             <p
@@ -67,7 +76,11 @@ export const HomePage = () => {
         </div>
         <div className="last text-light">
           <h6>¿Ya tienes una cuenta?</h6>
-          <button className="btn3">Iniciar sesion</button>
+          <button className="btn3">
+            <Link to="login" style={{ textDecoration: "none", color: "aqua" }}>
+              Iniciar Sesion
+            </Link>
+          </button>
         </div>
         <h6
           style={{
