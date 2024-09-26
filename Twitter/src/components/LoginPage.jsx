@@ -1,5 +1,3 @@
-function LoginPage() {
-  return <div>LoginPage</div>;
-}
-
-export default LoginPage;
+export const LoginPage = () => {
+  return <></>;
+};

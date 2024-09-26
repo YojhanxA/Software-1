@@ -5,12 +5,12 @@ import "../styles/home.css";
 export const HomePage = () => {
   return (
     <>
-      <div div className="vh-100 bg-black">
+      <div style={{ backgroundColor: "black" }}>
         <div className=" d-flex ">
           <div style={{ marginTop: "100px" }}>
             <img
               src={miLogo}
-              className="img-fluid"
+              className="img  img-fluid "
               alt="Imagen"
               style={{ marginTop: "130px", marginLeft: "150px" }}
             />
@@ -23,8 +23,18 @@ export const HomePage = () => {
               marginRight: "200px",
             }}
           >
-            <span style={{ fontSize: "75px" }}>Lo que está pasando ahora</span>
-            <div style={{ position: "absolute", top: "400px", right: "500px" }}>
+            <span
+              style={{
+                fontSize: "75px",
+                position: "absolute",
+                top: "70px",
+                left: "750px",
+                right: "100px",
+              }}
+            >
+              Lo que está pasando ahora
+            </span>
+            <div style={{ position: "absolute", top: "320px", right: "470px" }}>
               <h4>Únete Hoy</h4>
               <div>
                 <button className="btn">Registrarse con Google</button>
@@ -39,9 +49,10 @@ export const HomePage = () => {
             </div>
             <p
               style={{
-                marginTop: "283px",
+                marginTop: "430px",
                 fontSize: "10px",
                 marginRight: "300px",
+                marginLeft: "-140px",
               }}
             >
               Al registrarte, aceptas los{" "}
@@ -54,7 +65,23 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-        <div className="text-light"></div>
+        <div className="last text-light">
+          <h6>¿Ya tienes una cuenta?</h6>
+          <button className="btn3">Iniciar sesion</button>
+        </div>
+        <h6
+          style={{
+            color: "white",
+            marginTop: "100px",
+            fontSize: "13px",
+            textAlign: "center",
+          }}
+        >
+          Información-Descarga la app de X-Centro de Ayuda-Condiciones de
+          Servicio-Política de Privacidad-Política de cookies-Accesibilidad
+          Información de anuncios-Blog-Empleos-Recursos para
+          marcas-Publicidad-Marketing
+        </h6>
       </div>
     </>
   );
